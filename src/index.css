@@ -7,4 +7,17 @@
         font-family: 'Signika';
         src: url("./assets/fonts/Signika-VariableFont_GRAD,wght.ttf");
     }
+    @font-face {
+        font-family: 'Martel';
+        src: url("./assets/fonts/Martel-Regular.ttf");
+    }
 }
+
+.asideScroll::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: inherit;
+  }
+  .asideScroll::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
