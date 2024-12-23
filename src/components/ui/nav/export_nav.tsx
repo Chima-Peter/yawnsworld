@@ -7,10 +7,10 @@ import MobileNav from './mobile_nav.js'
 const ExportNav = () => {
   return (
     <>
-        <MediaQuery maxWidth={1023}>
-            <div />
+        <MediaQuery maxWidth={1189.9}>
+            <MobileNav />
         </MediaQuery>
-        <MediaQuery minWidth={1024}>
+        <MediaQuery minWidth={1190}>
             <DesktopNav />
         </MediaQuery>
     </>
