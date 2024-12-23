@@ -60,17 +60,21 @@ const Footer = () => {
       </section>
 
       <motion.section 
-        className='flex gap-0'
+        className='flex  gap-4 min-lg:gap-0'
         initial={{ x: '50px' }}
         animate={{ x: '-580px' }}
-        transition={{ duration: 8, repeat: Infinity, repeatType: 'loop' }}>
+        transition={{ duration: 10, repeat: Infinity, repeatType: 'loop', repeatDelay: 0 }}>
         {
-          slides.map(((slide) => (
-            <div 
-              className='flex gap-0 items-center'>
-              <MdSubdirectoryArrowRight className='w-20 h-20 text-white' />
+          slides.map(((slide, index) => (
+            <Link 
+              to="" 
+              className='flex gap-4 min-lg:gap-0 items-center'
+              key={slide}>
+              {
+                index !== 0 && <MdSubdirectoryArrowRight className='w-[50px] h-[50px] text-white' />
+              }
               <img src={slide} alt="Slide Icon" className='w-[150px]' />
-            </div>
+            </Link>
           )))
         }
       </motion.section>
