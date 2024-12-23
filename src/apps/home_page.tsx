@@ -6,9 +6,9 @@ import { RiTelegram2Fill } from "react-icons/ri";
 
 
 import { childVariants, containerVariants } from "../components/lib/motion_variants";
-import YawnOffers from "../components/ui/nav/home_page/yawn_offers";
-import SlideBrands from "../components/ui/nav/home_page/slide_brands";
-import SlideYawn from "../components/ui/nav/home_page/slide_yawn";
+import YawnOffers from "../components/ui/home_page/yawn_offers";
+import SlideBrands from "../components/ui/home_page/slide_brands";
+import SlideYawn from "../components/ui/home_page/slide_yawn";
 
 import zz_img from '../assets/images/home_page/zzz.svg'
 import bannerImg1 from '../assets/images/home_page/bannerYellowImg.svg'
@@ -32,7 +32,7 @@ import keysec_img from '../assets/images/home_page/key-sec-mobile-img.svg'
 import card1 from '../assets/images/home_page/card-1-n.svg'
 import card2 from '../assets/images/home_page/card-2-n.svg'
 import lines_img from '../assets/images/home_page/lines-img1.svg'
-import BlockTemplate from "../components/ui/nav/home_page/block_template";
+import BlockTemplate from "../components/ui/home_page/block_template";
 
 
 const HomePage = () => {

@@ -1,74 +1,85 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { motion } from 'motion/react'
+import { GoArrowRight } from "react-icons/go";
+import { MdSubdirectoryArrowRight } from "react-icons/md";
 
-import { SlSocialFacebook, SlSocialInstagram, SlSocialLinkedin, SlSocialTwitter } from 'react-icons/sl'
-
-import icon from '../../../assets/images/logo.svg'
+import footer_img from '../../../assets/images/home_page/joinus-img.svg'
+import slide1 from '../../../assets/images/home_page/tg-icon.webp'
+import slide2 from '../../../assets/images/home_page/tg-icon1.webp'
+import slide3 from '../../../assets/images/home_page/tw-icon.webp'
+import slide4 from '../../../assets/images/home_page/tw-icon1.webp'
+import slide5 from '../../../assets/images/home_page/tw-icon2.webp'
+import slide6 from '../../../assets/images/home_page/tw-icon3.webp'
 
 const Footer = () => {
+  const links = [
+    'about', 'ecosystem', 'latest', 'community'
+  ]
+  const slides = [
+    slide1, slide3, slide5, slide2, slide4, slide6
+  ]
   return (
-    <footer className="flex flex-col gap-24 font-main w-[100%] border-t border-t-gray-200 pt-12 pb-2 md:gap-12 px-4 sm:px-6 md:px-10 lg:px-14 xl:px-[130px] 2xl:px-[160px]">
-      <section className='flex gap-8 lg:gap-24 xl:gap-28 2xl:gap-32 w-[100%] flex-wrap'>
-        <div className='flex flex-col gap-4'>
-          <img src={icon} alt="FitGuru" className='w-[100px]' />
-          <p className='text-[16px] font-light w-[100%] lg:w-[350px] opacity-60 leading-relaxed'>
-            At FitGuru, your fitness goals are our priority. Whether you're taking the first step or pushing toward new personal bests, we're here to support you every step of the way. Join us today and let’s make fitness a lifestyle!
-          </p>
+    <footer className="flex flex-col gap-8 font-main bg-black text-white pt-24 overflow-hidden">
+      <section className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-start w-[100%] px-4 sm:px-6 min-lg:px-8 xl:px-10 2xl:px-24'>
+        <div className='flex gap-0 items-center'>
+          <h5 className="text-[3rem] md:text-[4rem] min-lg:text-[5rem] xl:text-[6rem] 2xl:text-[7rem] tracking-tighter w-[100%] leading-none">
+            JOIN US
+          </h5>
+          <img src={footer_img} alt="JOIN US TODAY" className='w-[50%] md:w-[250px] min-lg:w-max' />
         </div>
-        
-        <ul className='flex flex-col gap-2 mr-16 lg:mr-0'>
-          <h6 className='text-lg xl:text-xl 2xl:text-2xl font-semibold'>
-            Menu
-          </h6>
-          <NavLink className='hover:font-normal hover:opacity-100 text-[15px] font-light opacity-60' to="#home">
-            Home
-          </NavLink>
-          <NavLink className='hover:font-normal hover:opacity-100 text-[15px] font-light opacity-60' to="#about">
-            About
-          </NavLink>
-          <NavLink className='hover:font-normal hover:opacity-100 text-[15px] font-light opacity-60' to="#trainers">
-            Trainers
-          </NavLink>
-          <NavLink className='hover:font-normal hover:opacity-100 text-[15px] font-light opacity-60' to="#plans">
-            Plans
-          </NavLink>
-          <NavLink className='hover:font-normal hover:opacity-100 text-[15px] font-light opacity-60' to="#reviews">
-            Reviews
-          </NavLink>
-        </ul>
-
-        <ul className='flex flex-col gap-4'>
-          <h6 className='text-lg xl:text-xl 2xl:text-2xl font-semibold'>
-            Social Media
-          </h6 >
-          <Link to="https://www.linkedin.com/in/chimaojimma/" target='_blank' className='flex hover:font-medium font-light hover:opacity-100 gap-2 items-center opacity-60'>
-            <SlSocialFacebook className='w-4 h-4 xl:w-6 xl:h-6' />
-            <p className='text-sm xl:text-[16px]'>
-              Facebook
-            </p>
-          </Link>
-          <Link to="https://www.linkedin.com/in/chimaojimma/" target='_blank' className='flex hover:font-medium font-light hover:opacity-100 gap-2 items-center opacity-60'>
-            <SlSocialInstagram className='w-4 h-4 xl:w-6 xl:h-6' />
-            <p className='text-sm xl:text-[16px]'>
-              Instagram
-            </p>
-          </Link>
-          <Link to="https://x.com/mobi_unbothered" target='_blank' className='flex hover:font-medium font-light hover:opacity-100 gap-2 items-center opacity-60'>
-            <SlSocialTwitter className='w-4 h-4 xl:w-6 xl:h-6' />
-            <p className='text-sm xl:text-[16px]'>
-              Twitter
-            </p>
-          </Link>
-          <Link to="https://www.linkedin.com/in/chimaojimma/" target='_blank' className='flex hover:font-medium font-light hover:opacity-100 gap-2 items-center opacity-60'>
-            <SlSocialLinkedin className='w-4 h-4 xl:w-6 xl:h-6' />
-            <p className='text-sm xl:text-[16px]'>
-              LinkedIn
-            </p>
-          </Link>
+        <ul className='flex flex-col gap-2'>
+          {
+            links.map((link) => (
+              <li className='flex gap-2 items-center group/parent'>
+                <GoArrowRight className='text-white w-5 h-5' />
+                <Link to={`/${link}`} className='font-light text-[16px] md:text-[18px] min-lg:text-[20px] xl:text-[22px] 2xl:text-[24px] group-hover/parent:bg-gray-700 rounded-2xl px-2 py-1 capitalize'>
+                  {link}
+                </Link>
+              </li>
+            ))
+          }
+          <li className='flex gap-2 items-center group/parent'>
+            <GoArrowRight className='text-white w-5 h-5' />
+            <Link to={''} className='font-light  text-[16px] md:text-[18px] min-lg:text-[20px] xl:text-[22px] 2xl:text-[24px] group-hover/parent:bg-gray-700 rounded-2xl px-2 py-1'>
+              Get $YAWN
+            </Link>
+          </li>
+          <li className='flex gap-2 items-center group/parent'>
+            <GoArrowRight className='text-white w-5 h-5' />
+            <Link to={``} className='font-light  text-[16px] md:text-[18px] min-lg:text-[20px] xl:text-[22px] 2xl:text-[24px] group-hover/parent:bg-gray-700 rounded-2xl px-2 py-1'>
+              Terms of Use
+            </Link>
+          </li>
+          <li className='flex gap-2 items-center group/parent'>
+            <GoArrowRight className='text-white w-5 h-5' />
+            <Link to={``} className='font-light  text-[16px] md:text-[18px] min-lg:text-[20px] xl:text-[22px] 2xl:text-[24px] group-hover/parent:bg-gray-700 rounded-2xl px-2 py-1'>
+              Privacy Policy
+            </Link>
+          </li>
         </ul>
       </section>
-      <p className='text-xs opacity-60 tracking-wide self-center font-bold'>
-        &copy; 2023 FitGuru. All rights reserved.
-      </p>
+
+      <motion.section 
+        className='flex gap-0'
+        initial={{ x: '50px' }}
+        animate={{ x: '-580px' }}
+        transition={{ duration: 8, repeat: Infinity, repeatType: 'loop' }}>
+        {
+          slides.map(((slide) => (
+            <div 
+              className='flex gap-0 items-center'>
+              <MdSubdirectoryArrowRight className='w-20 h-20 text-white' />
+              <img src={slide} alt="Slide Icon" className='w-[150px]' />
+            </div>
+          )))
+        }
+      </motion.section>
+
+      <section className='flex py-6 w-[100%] items-center justify-center border-t border-t-gray-500'>
+        <h6 className='text-[1rem] xl:text-[1.2rem] font-light uppercase'>
+          All rights reserved © YAWN 2024
+        </h6>
+      </section>
     </footer>
   )
 }

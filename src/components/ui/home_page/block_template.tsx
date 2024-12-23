@@ -29,7 +29,7 @@ const BlockTemplate = () => {
     ]
 
     return (
-        <section className="w-[100%] flex flex-col gap-4 mt-4">
+        <section className="w-[100%] flex flex-col gap-4 xl:gap-8 mt-4 items-center">
             {
                 blockData.map((block) => (
                     <motion.div 

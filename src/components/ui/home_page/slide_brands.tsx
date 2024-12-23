@@ -3,16 +3,16 @@ import { animate, motion, useMotionValue } from 'motion/react';
 import useMeasure from 'react-use-measure';
 
 
-import slidenewImg1 from '../../../../assets/images/home_page/slidenewImg1.svg';
-import slidenewImg2 from '../../../../assets/images/home_page/slidenewImg2.svg';
-import slidenewImg3 from '../../../../assets/images/home_page/slidenewImg3.svg';
-import slidenewImg4 from '../../../../assets/images/home_page/slidenewImg4.svg';
-import slidenewImg5 from '../../../../assets/images/home_page/slidenewImg5.svg';
-import slidenewImg6 from '../../../../assets/images/home_page/slidenewImg6.svg';
-import slidenewImg7 from '../../../../assets/images/home_page/slidenewImg7.svg';
-import slidenewImg8 from '../../../../assets/images/home_page/slidenewImg8.svg';
-import slidenewImg9 from '../../../../assets/images/home_page/slidenewImg9.svg';
-import slidenewImg10 from '../../../../assets/images/home_page/slidenewImg10.svg';
+import slidenewImg1 from '../../../assets/images/home_page/slidenewImg1.svg';
+import slidenewImg2 from '../../../assets/images/home_page/slidenewImg2.svg';
+import slidenewImg3 from '../../../assets/images/home_page/slidenewImg3.svg';
+import slidenewImg4 from '../../../assets/images/home_page/slidenewImg4.svg';
+import slidenewImg5 from '../../../assets/images/home_page/slidenewImg5.svg';
+import slidenewImg6 from '../../../assets/images/home_page/slidenewImg6.svg';
+import slidenewImg7 from '../../../assets/images/home_page/slidenewImg7.svg';
+import slidenewImg8 from '../../../assets/images/home_page/slidenewImg8.svg';
+import slidenewImg9 from '../../../assets/images/home_page/slidenewImg9.svg';
+import slidenewImg10 from '../../../assets/images/home_page/slidenewImg10.svg';
 
 
 const SlideBrands = () => {
