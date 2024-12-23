@@ -6,7 +6,7 @@ import Footer from "./components/ui/nav/footer";
 
 const App = () => {
   return (
-      <BrowserRouter basename={import.meta.env.PROD ? '/repo_name' : '/'}>
+      <BrowserRouter basename={import.meta.env.PROD ? '/yawnsworld' : '/'}>
          <ExportNav />
          <Routes>
             <Route path="/" element={<HomePage />} />
