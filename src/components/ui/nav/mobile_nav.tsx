@@ -23,7 +23,7 @@ const MobileNav = () => {
 //   });
 
   return (
-    <nav className={`flex gap-2 justify-between bg-white items-center z-20 w-[100%] px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24 py-8 font-main`}>
+    <nav className={`flex gap-2 justify-between bg-white items-center z-20 w-[100%] px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24 py-8 font-main h-fit`}>
         <Link to="/">
             <img src={`${icon}`} alt="YawnsWorld" />
         </Link>

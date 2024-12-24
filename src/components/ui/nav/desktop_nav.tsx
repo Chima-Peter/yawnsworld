@@ -27,34 +27,34 @@ const DesktopNav = () => {
 //   });
 
   return (
-    <nav className={`flex gap-2 justify-between bg-white items-center z-20 w-[100%] px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24 py-8 font-main`}>
+    <nav className={`flex gap-2 justify-between bg-white items-center w-[100%] px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24 py-8 font-main h-fit`}>
         <Link to="/">
             <img src={`${icon}`} alt="YawnsWorld" />
         </Link>
         <ul className='flex gap-4 lg:justify-between px-12 py-3 bg-gray-100 rounded-xl items-center'>
-            <NavLink to={'#about'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#about') ? 'bg-[#e8e8e8] py-1 px-2 rounded-xl' : 'font-light'}`}>
+            <NavLink to={'#about'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#about') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
                 About
             </NavLink>
             <li className=' border-r-[1.4px] border-r-black w-5 h-4' />
-            <NavLink to={'#about'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#ecosystem') ? 'bg-[#e8e8e8] py-1 px-2 rounded-xl' : 'font-light'}`}>
+            <NavLink to={'#ecosystem'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#ecosystem') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
                 Ecosystem
             </NavLink>
             <li className=' border-r-[1.4px] border-r-black w-5 h-4' />
-            <NavLink to={'#trainers'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#latest') ? 'bg-[#e8e8e8] py-1 px-2 rounded-xl' : 'font-light'}`}>
+            <NavLink to={'#latest'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#latest') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
                 Latest
             </NavLink>
             <li className=' border-r-[1.4px] border-r-black w-5 h-4' />
-            <NavLink to={'#plans'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#community') ? 'bg-[#e8e8e8] py-1 px-2 rounded-xl' : 'font-light'}`}>
+            <NavLink to={'#community'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#community') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
                 Community
             </NavLink>
             <li className=' border-r-[1.4px] border-r-black w-5 h-4' />
-            <NavLink to={'#reviews'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#get-yawn') ? 'bg-[#e8e8e8] py-1 px-2 rounded-xl' : 'font-light'}`}>
+            <NavLink to={'#get-yawn'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#get-yawn') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
                 Get $YAWN
             </NavLink>
             <li className=' border-r-[1.4px] border-r-black w-5 h-4' />
-            <NavLink to={'#reviews'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#bitget-wallet') ? 'bg-[#e8e8e8] py-1 px-2 rounded-xl' : 'font-light'}`}>
+            <Link to={''} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
                 Bitget Wallet
-            </NavLink>
+            </Link>
         </ul>
         <div className='flex items-center gap-4 justify-between'>
             <button type="button" className='p-4 bg-gray-100 hover:bg-black group/btn rounded-xl'>

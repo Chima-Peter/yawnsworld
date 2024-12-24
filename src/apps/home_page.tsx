@@ -37,7 +37,7 @@ import BlockTemplate from "../components/ui/home_page/block_template";
 
 const HomePage = () => {
   return (
-    <main className="flex flex-col gap-8 xl:gap-10 2xl:gap-12 mt-6 md:mt-8 lg:mt-8 xl:mt-10 2xl:mt-24 font-main overflow-hidden">
+    <main className="flex flex-col gap-8 xl:gap-10 2xl:gap-12 pt-6 md:pt-8 xl:pt-10 2xl:pt-24 font-main overflow-hidden">
       <motion.section 
         variants={containerVariants}
         initial='hidden'
@@ -96,7 +96,9 @@ const HomePage = () => {
       </motion.section>
 
 
-      <motion.section className="flex flex-col gap-8 pt-14 items-center bg-[#ECC3FF] w-[100%]">
+      <motion.section 
+        id="about" 
+        className="flex flex-col gap-8 pt-14 items-center bg-[#ECC3FF] w-[100%]">
         <SlideBrands />
         <motion.h1 
           initial={{ opacity: 0, y: 100 }}
@@ -119,7 +121,7 @@ const HomePage = () => {
           <SlideYawn />
       </motion.section>
 
-      <motion.section className="flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24 mt-10 md:h-[700px] md:overflow-y-auto asideScroll">
+      <motion.section id="ecosystem" className="flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24 mt-10 md:h-[700px] md:overflow-y-auto asideScroll">
         <motion.div 
           className="w-[100%] md:w-[400px] lg:w-[500px] xl:w-[700px] 2xl:w-[1000px] md:sticky top-6 flex flex-col gap-4"
           initial={{ opacity: 1, x: -200 }}
@@ -141,7 +143,7 @@ const HomePage = () => {
         </div>
       </motion.section>
 
-      <section className="flex gap-8 flex-col mt-6 py-14 bg-[#F8F8F8] px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24">
+      <section id="latest" className="flex gap-8 flex-col mt-6 py-14 bg-[#F8F8F8] px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24">
         <motion.h2 
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +154,7 @@ const HomePage = () => {
         </motion.h2>
       </section>
       
-      <section className="bg-[#94B8FF] flex flex-col gap-6 min-lg:gap-0 min-lg:flex-row min-lg:justify-between py-14 px-4 sm:px-6 min-lg:px-8 xl:px-10 2xl:px-24">
+      <section id="community" className="bg-[#94B8FF] flex flex-col gap-6 min-lg:gap-0 min-lg:flex-row min-lg:justify-between py-14 px-4 sm:px-6 min-lg:px-8 xl:px-10 2xl:px-24">
         <div className="self-center min-lg:self-auto relative">
           <img src={plan1} alt="Join the TG Community" className="w-[288px] h-[308px] xs:w-[361px] xs:h-[387px] sm:w-[588px] sm:h-[586px] sticky z-40" />
           <motion.div 
@@ -195,7 +197,7 @@ const HomePage = () => {
         </motion.div>
       </section>
 
-      <section className="flex flex-col gap-8 sm:gap-0 py-10 px-4 sm:px-6 min-lg:px-8 xl:px-10 2xl:px-24 bg-[#F8F8F8] w-[100%]">
+      <section id="get-yawn" className="flex flex-col gap-8 sm:gap-0 py-10 px-4 sm:px-6 min-lg:px-8 xl:px-10 2xl:px-24 bg-[#F8F8F8] w-[100%]">
         <section className="flex flex-col gap-6 sm:flex-row sm:gap-0 sm:justify-between  w-[100%]">
           <motion.div 
             initial={{ opacity: 0, x: -100 }}

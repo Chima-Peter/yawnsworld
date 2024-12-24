@@ -12,6 +12,9 @@
         src: url("./assets/fonts/Martel-Regular.ttf");
     }
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .asideScroll::-webkit-scrollbar {
     width: 0px;
