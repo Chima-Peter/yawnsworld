@@ -123,11 +123,7 @@ const HomePage = () => {
 
       <motion.section id="ecosystem" className="flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24 mt-10 md:h-[700px] md:overflow-y-auto asideScroll">
         <motion.div 
-          className="w-[100%] md:w-[400px] lg:w-[500px] xl:w-[700px] 2xl:w-[1000px] md:sticky top-6 flex flex-col gap-4"
-          initial={{ opacity: 1, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ amount: 0.2, once: true }}
-          transition={{ duration: 0.5, ease: 'easeInOut' }}>
+          className="w-[100%] md:w-[400px] lg:w-[500px] xl:w-[700px] 2xl:w-[1000px] md:sticky top-6 flex flex-col gap-4">
           <h2 className="text-[3rem] xs:text-[4rem] md:text-[3rem] lg:text-[5.3rem] xl:text-[6rem] 2xl:text-[7rem] tracking-tighter w-[100%] leading-none xl:leading-tighter font-extra">
             EXPLORE YAWN'S <span><img src={globeIcon} alt="Globe representing Yawn's universe" className="inline w-[70px]" /> </span> UNIVERSE
           </h2>
