@@ -70,7 +70,7 @@ const HomePage = () => {
           <motion.div 
           variants={childVariants}
           className="animate-bounce">
-            <Link className="w-fit px-8 py-3 rounded-full bg-black text-[16px] text-white font-extra" to={''}>
+            <Link className="w-fit px-8 py-3 rounded-full bg-black text-[16px] text-white font-extra" to={'https://app.uniswap.org/swap?outputCurrency=0x88Ce174C655B6d11210A069B2c106632DaBDB068&chain=ethereum'}>
               BUY $YAWN
             </Link>
           </motion.div>
@@ -131,7 +131,7 @@ const HomePage = () => {
           <h2 className="text-[3rem] xs:text-[4rem] md:text-[3rem] lg:text-[5.3rem] xl:text-[6rem] 2xl:text-[7rem] tracking-tighter w-[100%] leading-none xl:leading-tighter font-extra">
             EXPLORE YAWN'S <span><img src={globeIcon} alt="Globe representing Yawn's universe" className="inline w-[70px]" /> </span> UNIVERSE
           </h2>
-          <Link className="w-fit px-8 py-3 rounded-full bg-black text-[16px] xl:text-[18px] 2xl:text-[20px] text-white font-extra" to={''}>
+          <Link className="w-fit px-8 py-3 rounded-full bg-black text-[16px] xl:text-[18px] 2xl:text-[20px] text-white font-extra" to={'https://app.uniswap.org/swap?outputCurrency=0x88Ce174C655B6d11210A069B2c106632DaBDB068&chain=ethereum'}>
               BUY $YAWN
           </Link>
         </motion.div>
@@ -182,7 +182,7 @@ const HomePage = () => {
           <div className="flex gap-6 items-center mt-2">
             <motion.a 
               className="flex gap-2 items-center group/parent outline-none w-fit text-[16px] uppercase xl:text-[18px] 2xl:text-[20px] rounded-full bg-black text-white border border-black py-4 px-8 cursor-pointer"
-              href="#"
+              href="https://t.me/yawnsworld"
               whileHover={{ backgroundColor: "#ffffff", color: "#000000" }}
               transition={{ ease: "circOut" }}
               aria-label="Join Telegram Community">

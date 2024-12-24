@@ -52,7 +52,7 @@ const DesktopNav = () => {
                 Get $YAWN
             </NavLink>
             <li className=' border-r-[1.4px] border-r-black w-5 h-4' />
-            <Link to={''} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
+            <Link to={'https://web3.bitget.com/en/docs/dapp/web-dapp.html'} target='_blank' className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
                 Bitget Wallet
             </Link>
         </ul>

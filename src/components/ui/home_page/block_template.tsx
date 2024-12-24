@@ -38,6 +38,7 @@ const BlockTemplate = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, ease: 'easeIn' }}
                         viewport={{ amount: 0.2, once: false }}
+                        key={block.text}
                         className='w-[95%] rounded-2xl py-4 px-8 md:py-8 md:px-16 flex flex-col md:flex-row gap-6 md:gap-0 sm:justify-between'>
                         <h4 className='text-[2rem] font-medium sm:text-[3rem] min-lg:text-[4rem]'>
                             {block.header}

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import { motion } from 'motion/react'
 import { GoArrowRight } from "react-icons/go";
 import { MdSubdirectoryArrowRight } from "react-icons/md";
@@ -30,19 +31,19 @@ const Footer = () => {
         <ul className='flex flex-col gap-2'>
           {
             links.map((link) => (
-              <li className='flex gap-2 items-center group/parent'>
+              <li key={link} className='flex gap-2 items-center group/parent'>
                 <GoArrowRight className='text-white w-5 h-5' />
-                <Link to={`/${link}`} className='font-light text-[16px] md:text-[18px] min-lg:text-[20px] xl:text-[22px] 2xl:text-[24px] group-hover/parent:bg-gray-700 rounded-2xl px-2 py-1 capitalize'>
+                <HashLink to={`#${link}`} className='font-light text-[16px] md:text-[18px] min-lg:text-[20px] xl:text-[22px] 2xl:text-[24px] group-hover/parent:bg-gray-700 rounded-2xl px-2 py-1 capitalize'>
                   {link}
-                </Link>
+                </HashLink>
               </li>
             ))
           }
           <li className='flex gap-2 items-center group/parent'>
             <GoArrowRight className='text-white w-5 h-5' />
-            <Link to={''} className='font-light  text-[16px] md:text-[18px] min-lg:text-[20px] xl:text-[22px] 2xl:text-[24px] group-hover/parent:bg-gray-700 rounded-2xl px-2 py-1'>
+            <HashLink to={'#get-yawn'} className='font-light  text-[16px] md:text-[18px] min-lg:text-[20px] xl:text-[22px] 2xl:text-[24px] group-hover/parent:bg-gray-700 rounded-2xl px-2 py-1'>
               Get $YAWN
-            </Link>
+            </HashLink>
           </li>
           <li className='flex gap-2 items-center group/parent'>
             <GoArrowRight className='text-white w-5 h-5' />
@@ -67,7 +68,8 @@ const Footer = () => {
         {
           slides.map(((slide, index) => (
             <Link 
-              to="" 
+              to={`${(index === 0) || (index === 3) ? 'https://t.me/yawnsworld' :'https://x.com/yawnsworld'}`} 
+              target='_blank'
               className='flex gap-4 min-lg:gap-0 items-center'
               key={slide}>
               {
